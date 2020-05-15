@@ -8,3 +8,5 @@ let getSubPoints = async () => {
 }
 
 getSubPoints()
+
+setInterval(() => getSubPoints(), 2*60*1000)
