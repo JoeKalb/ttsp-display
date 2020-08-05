@@ -3,7 +3,7 @@ const display = document.getElementById('display')
 let getSubPoints = async () => {
     let result = await fetch(' https://decapi.me/twitch/subpoints/thethingssheplays')
     let text = await result.text()
-    let trueCount = parseInt(text) + 2
+    let trueCount = parseInt(text) + 2    
     display.innerText = trueCount
 }
 
